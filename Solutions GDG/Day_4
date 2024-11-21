@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int tc;
+    cout << "Enter the number of test cases: ";
+    cin >> tc;
+    int x, y, z;
+    for (int i = 0; i < tc; i++)
+    {
+
+        cin >> x >> y >> z;
+        if (((x * y) / 2) >= z)
+        {
+            cout << "NO" << endl;
+        }
+        else
+        {
+            cout << "YES" << endl;
+        }
+    }
+    return 0;
+}
