@@ -1,0 +1,29 @@
+#include <iostream>
+#include <string>
+#include <cctype>
+using namespace std;
+
+int countVowels(const std::string &str)
+{
+    int vowelCount = 0;
+    for (char ch : str)
+    {
+        char lowerCh = tolower(ch);
+        if (lowerCh == 'a' || lowerCh == 'e' || lowerCh == 'i' || lowerCh == 'o' || lowerCh == 'u')
+        {
+            vowelCount++;
+        }
+    }
+    return vowelCount;
+}
+
+int main()
+{
+    string input;
+    getline(cin, input);
+
+    int result = countVowels(input);
+    cout << result << endl;
+
+    return 0;
+}
